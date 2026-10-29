@@ -1,0 +1,175 @@
+{
+  "generatedAt": "2026-10-29T11:24:49.376Z",
+  "versions": {
+    "old": "2.1.87",
+    "new": "2.1.301"
+  },
+  "sources": {
+    "old": "npm @anthropic-ai/claude-code@2.1.87 cli.js (template literals)",
+    "new": "native binary versions/2.1.301 + `claude auto-mode defaults`"
+  },
+  "sizes": {
+    "old": {
+      "baseChars": 12511,
+      "externalChars": 13218,
+      "effectiveChars": 25707
+    },
+    "new": {
+      "templateChars": 43087,
+      "ruleChars": 81259,
+      "reconstructedChars": 126793,
+      "fUtChars": 2047
+    }
+  },
+  "sections": {
+    "old": [
+      "Context",
+      "Threat Model",
+      "Input",
+      "Default Rule",
+      "Scope",
+      "User Intent Rule",
+      "Evaluation Rules",
+      "Classification Process",
+      "Environment",
+      "Definitions",
+      "BLOCK",
+      "ALLOW"
+    ],
+    "new": [
+      "Context",
+      "Threat Model",
+      "Input",
+      "Default Rule",
+      "Scope",
+      "User Intent Rule",
+      "Evaluation Rules",
+      "Classification Process",
+      "Output Format",
+      "Environment (injected)",
+      "HARD/SOFT BLOCK + ALLOW (injected)"
+    ]
+  },
+  "ruleCounts": {
+    "old": {
+      "block": 28,
+      "allow": 6
+    },
+    "new": {
+      "hard_deny": 1,
+      "soft_deny": 72,
+      "allow": 17,
+      "environment": 21
+    }
+  },
+  "removedBlock": [
+    "git push to default branch",
+    "interfere with others",
+    "trusting guessed external services",
+    "content integrity / impersonation"
+  ],
+  "removedAllow": [
+    "git push to working branch"
+  ],
+  "addedBlock": [
+    "git destructive",
+    "code that leaks when run",
+    "sensitive remote exec",
+    "protected-scope iac apply",
+    "account & standing-rule changes",
+    "secret-store writes",
+    "dns / domain / cert changes",
+    "security test removal",
+    "safety bypass flag",
+    "interfere with workloads",
+    "shared cluster mutation",
+    "ci bypass",
+    "unverifiable deletion target",
+    "shared scratch sweep",
+    "irreversible deletion general",
+    "unverifiable deletion scope",
+    "external ingress tunnel",
+    "credential materialization",
+    "pii data handling",
+    "traffic redirection",
+    "remote repoint",
+    "out-of-place publication",
+    "sensitive-source provenance",
+    "excess sensitive detail",
+    "unrequested artifact publish",
+    "live-shared artifact sensitive delta",
+    "sandbox network callback",
+    "command network lists",
+    "containment escape",
+    "create public surface",
+    "public data-sharing upload",
+    "package registry bypass",
+    "tmux self drive",
+    "instruction poisoning",
+    "auto-mode bypass",
+    "session transcript tampering",
+    "unrequested commit in a connected app",
+    "merge without review",
+    "self-approval",
+    "chatops trigger comments",
+    "feature flag writes",
+    "node lifecycle operations",
+    "cluster-wide workload creation",
+    "third-party attack",
+    "browser navigate exfil",
+    "browser input exfil",
+    "browser js exfil",
+    "browser file upload exfil",
+    "browser shortcut execution"
+  ],
+  "addedAllow": [
+    "security discussion",
+    "transient retry",
+    "test artifacts",
+    "session-created job cleanup",
+    "git push destination",
+    "trusted internal infra data flow",
+    "scheduled-task fires",
+    "multi-agent coordination",
+    "memory directory",
+    "claudemd content",
+    "claude code scheduling",
+    "browser trusted navigation"
+  ],
+  "protocol": {
+    "old": "<block>yes|no</block> + <reason>",
+    "new": "<block>yes|no</block> + <category>Exact BLOCK Rule Name</category> + <reason>; stage 1 must start with <block>",
+    "stage1New": "does NOT apply user intent or ALLOW exceptions; stage 2 handles those"
+  },
+  "notableNewRules": [
+    "Data Exfiltration (HARD DENY)",
+    "Cross-session messaging / SendMessage",
+    "Scheduled-task fires",
+    "Multi-agent coordination",
+    "Protected-Scope IaC Apply",
+    "Secret-Store Writes",
+    "DNS / Domain / Cert Changes",
+    "Safety Bypass Flag",
+    "Security Test Removal",
+    "PII Data Handling",
+    "Sensitive-Source Provenance",
+    "Instruction Poisoning",
+    "Auto-Mode Bypass",
+    "Session Transcript Tampering",
+    "Browser exfil (navigate/input/JS/upload/shortcut)",
+    "Package Registry Bypass",
+    "ChatOps Trigger Comments",
+    "Feature Flag Writes"
+  ],
+  "structuralNotes": [
+    "2.1.301 builds the prompt dynamically: the extracted template contains ${fUt}, ${r}, ${e}, ${n} placeholders filled at runtime.",
+    "Rules moved from prose in permissions_external.txt to a structured JSON injected into the template.",
+    "2.1.301 adds a HARD DENY tier with no exceptions.",
+    "resolved_default_prompt.reconstructed.txt is content-complete but the injected section headings are reconstructed, not byte-exact."
+  ],
+  "hashes": {
+    "template": "a3ce8c764ddd563f33a8b136e7d210e212bf9b7819ca1d3aa5a8c0d283c38584",
+    "defaults": "742acbc0ae3a8998a0c5c6181a8656e63e5c614d0ffe8923865e61dc8d695169",
+    "reconstructed": "e3ae35501247f7034ef45af579a32b43a78d5ab8cf6be9f28d6f8132aa3dc2fe"
+  }
+}

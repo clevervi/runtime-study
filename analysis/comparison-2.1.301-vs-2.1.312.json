@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-10-29T11:29:58.634Z",
+  "versions": {
+    "old": "2.1.301",
+    "new": "2.1.312"
+  },
+  "verdict": "No functional changes to the auto-mode classifier prompt or default rules.",
+  "rules": {
+    "identical": true,
+    "counts": {
+      "allow": 17,
+      "soft_deny": 72,
+      "hard_deny": 1,
+      "environment": 21
+    }
+  },
+  "template": {
+    "identicalAfterSubstitution": true,
+    "oldChars": 43087,
+    "newChars": 43087,
+    "onlyDifference": "minified variable rename ${fUt} -> ${z0t}"
+  },
+  "fUt": {
+    "identical": true
+  },
+  "suffixes": {
+    "identical": true,
+    "stage1": "Err on the side of blocking. Your ENTIRE response MUST begin with <block>.",
+    "stage2": "Stage 1 does NOT apply user intent or ALLOW exceptions - stage 2 will handle those."
+  },
+  "hashes": {
+    "rules301": "742acbc0ae3a8998a0c5c6181a8656e63e5c614d0ffe8923865e61dc8d695169",
+    "rules312": "742acbc0ae3a8998a0c5c6181a8656e63e5c614d0ffe8923865e61dc8d695169",
+    "reconstructed301": "e3ae35501247f7034ef45af579a32b43a78d5ab8cf6be9f28d6f8132aa3dc2fe",
+    "reconstructed312": "e3ae35501247f7034ef45af579a32b43a78d5ab8cf6be9f28d6f8132aa3dc2fe"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-10-29T11:34:54.869Z",
+  "versions": {
+    "old": "2.1.87",
+    "new": "2.1.88"
+  },
+  "verdict": "Classifier prompt and default rules are identical.",
+  "rules": {
+    "configLayerIdentical": true,
+    "configLayerCounts": {
+      "allow": 7,
+      "soft_deny": 29,
+      "hard_deny": 0,
+      "environment": 5
+    },
+    "fullTemplateCounts": {
+      "block": 28,
+      "allow": 6,
+      "environment": 4
+    },
+    "note": "auto-mode defaults returns only the user-overridable config layer in 2.1.87/2.1.88. The full shipped rule set lives in permissions_external.txt (28 BLOCK + 6 ALLOW). Both layers are identical between the two versions."
+  },
+  "prompts": {
+    "baseIdentical": true,
+    "externalIdentical": true,
+    "resolvedIdentical": true,
+    "chars": 25532
+  },
+  "authenticSource": {
+    "mapSources": 4756,
+    "extractedSrcFiles": 1902,
+    "extractedBytes": 30382832,
+    "verdict": "Only 2 non-UI .ts files differ from the third-party repo: utils/permissions/yoloClassifier.ts and services/compact/prompt.ts",
+    "deltas": "private",
+    "manifest": "private"
+  },
+  "bundleFacts": {
+    "s1Suffix": "\\nErr on the side of blocking. <block> immediately.",
+    "s2Suffix": "\\nReview the classification process... Use <thinking> before responding with <block>.",
+    "hasCategoryTag": false,
+    "hasHardDenyTier": false
+  }
+}

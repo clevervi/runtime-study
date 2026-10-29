@@ -1,0 +1,16 @@
+{
+  "name": "runtime-study",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Source-level notes on an agentic CLI runtime: permission gating, context compaction, and release drift.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node tests/yolo_parser.test.js && node tests/compact_parser.test.js && node --test tests/parser_eval.test.js",
+    "eval:parser": "node tools/parser-eval/run.mjs",
+    "fetch:version": "node tools/fetch-version.mjs"
+  },
+  "license": "UNLICENSED"
+}

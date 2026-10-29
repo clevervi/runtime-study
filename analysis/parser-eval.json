@@ -1,0 +1,206 @@
+{
+  "generatedAt": "2026-10-29T16:52:05.806Z",
+  "authentic": "2.1.88 cli.js parser",
+  "hardened": "third-party yoloClassifier.ts parser",
+  "total": 24,
+  "agreements": 20,
+  "differences": 4,
+  "failClosedToAllow": [
+    "newline-inside"
+  ],
+  "allowToBlock": [],
+  "rows": [
+    {
+      "case": "valid-yes",
+      "authentic": true,
+      "hardened": true,
+      "authenticLabel": "block",
+      "hardenedLabel": "block",
+      "changed": false
+    },
+    {
+      "case": "valid-no",
+      "authentic": false,
+      "hardened": false,
+      "authenticLabel": "allow",
+      "hardenedLabel": "allow",
+      "changed": false
+    },
+    {
+      "case": "preamble",
+      "authentic": false,
+      "hardened": false,
+      "authenticLabel": "allow",
+      "hardenedLabel": "allow",
+      "changed": false
+    },
+    {
+      "case": "thinking-then-yes",
+      "authentic": true,
+      "hardened": true,
+      "authenticLabel": "block",
+      "hardenedLabel": "block",
+      "changed": false
+    },
+    {
+      "case": "whitespace-inside",
+      "authentic": null,
+      "hardened": true,
+      "authenticLabel": "unparseable",
+      "hardenedLabel": "block",
+      "changed": true
+    },
+    {
+      "case": "newline-inside",
+      "authentic": null,
+      "hardened": false,
+      "authenticLabel": "unparseable",
+      "hardenedLabel": "allow",
+      "changed": true
+    },
+    {
+      "case": "nbsp-inside",
+      "authentic": null,
+      "hardened": true,
+      "authenticLabel": "unparseable",
+      "hardenedLabel": "block",
+      "changed": true
+    },
+    {
+      "case": "missing-close",
+      "authentic": true,
+      "hardened": true,
+      "authenticLabel": "block",
+      "hardenedLabel": "block",
+      "changed": false
+    },
+    {
+      "case": "truncated-open",
+      "authentic": null,
+      "hardened": null,
+      "authenticLabel": "unparseable",
+      "hardenedLabel": "unparseable",
+      "changed": false
+    },
+    {
+      "case": "truncated-decision",
+      "authentic": null,
+      "hardened": null,
+      "authenticLabel": "unparseable",
+      "hardenedLabel": "unparseable",
+      "changed": false
+    },
+    {
+      "case": "uppercase",
+      "authentic": true,
+      "hardened": true,
+      "authenticLabel": "block",
+      "hardenedLabel": "block",
+      "changed": false
+    },
+    {
+      "case": "mixed-case",
+      "authentic": true,
+      "hardened": true,
+      "authenticLabel": "block",
+      "hardenedLabel": "block",
+      "changed": false
+    },
+    {
+      "case": "injected-before",
+      "authentic": false,
+      "hardened": false,
+      "authenticLabel": "allow",
+      "hardenedLabel": "allow",
+      "changed": false
+    },
+    {
+      "case": "injected-whitespace-before",
+      "authentic": true,
+      "hardened": false,
+      "authenticLabel": "block",
+      "hardenedLabel": "allow",
+      "changed": true
+    },
+    {
+      "case": "injected-in-thinking",
+      "authentic": true,
+      "hardened": true,
+      "authenticLabel": "block",
+      "hardenedLabel": "block",
+      "changed": false
+    },
+    {
+      "case": "injected-unclosed-thinking",
+      "authentic": null,
+      "hardened": null,
+      "authenticLabel": "unparseable",
+      "hardenedLabel": "unparseable",
+      "changed": false
+    },
+    {
+      "case": "injected-in-reason",
+      "authentic": false,
+      "hardened": false,
+      "authenticLabel": "allow",
+      "hardenedLabel": "allow",
+      "changed": false
+    },
+    {
+      "case": "two-blocks-no-first",
+      "authentic": false,
+      "hardened": false,
+      "authenticLabel": "allow",
+      "hardenedLabel": "allow",
+      "changed": false
+    },
+    {
+      "case": "two-blocks-yes-first",
+      "authentic": true,
+      "hardened": true,
+      "authenticLabel": "block",
+      "hardenedLabel": "block",
+      "changed": false
+    },
+    {
+      "case": "nested-block",
+      "authentic": true,
+      "hardened": true,
+      "authenticLabel": "block",
+      "hardenedLabel": "block",
+      "changed": false
+    },
+    {
+      "case": "close-only",
+      "authentic": null,
+      "hardened": null,
+      "authenticLabel": "unparseable",
+      "hardenedLabel": "unparseable",
+      "changed": false
+    },
+    {
+      "case": "block-word-only",
+      "authentic": null,
+      "hardened": null,
+      "authenticLabel": "unparseable",
+      "hardenedLabel": "unparseable",
+      "changed": false
+    },
+    {
+      "case": "empty",
+      "authentic": null,
+      "hardened": null,
+      "authenticLabel": "unparseable",
+      "hardenedLabel": "unparseable",
+      "changed": false
+    },
+    {
+      "case": "reason-then-block",
+      "authentic": false,
+      "hardened": false,
+      "authenticLabel": "allow",
+      "hardenedLabel": "allow",
+      "changed": false
+    }
+  ]
+}

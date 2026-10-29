@@ -1,0 +1,52 @@
+{
+  "package": "@anthropic-ai/claude-code",
+  "version": "2.1.88",
+  "acquisition": {
+    "source": "Internet Archive Wayback Machine",
+    "url": "https://web.archive.org/web/20260331061545id_/https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.1.88.tgz",
+    "captured": "2026-03-31T06:15:45Z",
+    "tarballBytes": 31196633,
+    "tarballSha256": "d836a86d9150ecc594a7025524c50e24080478904c979f386d447770275ef813",
+    "note": "npm returns 404 today; this is the last public capture before the version was unpublished."
+  },
+  "contents": {
+    "cliJsBytes": 12983328,
+    "sourceMapBytes": 59766257,
+    "mapSources": 4756,
+    "srcFiles": 1902,
+    "srcBytes": 30382832
+  },
+  "prompts": {
+    "baseChars": 12511,
+    "externalChars": 13218,
+    "resolvedChars": 25532,
+    "identicalTo187": true,
+    "published": false
+  },
+  "rules": {
+    "configLayer": {
+      "allow": 7,
+      "soft_deny": 29,
+      "hard_deny": 0,
+      "environment": 5
+    },
+    "fullTemplate": {
+      "block": 28,
+      "allow": 6,
+      "environment": 4
+    },
+    "identicalTo187": true,
+    "note": "`auto-mode defaults` returns the config layer in 2.1.87/2.1.88; the full rule set is the prose template."
+  },
+  "authenticSource": {
+    "recovered": true,
+    "published": false,
+    "note": "Recovered from cli.js.map sourcesContent. The snapshot is kept private. Only two .ts files differ from the third-party fork; both were modified by its author."
+  },
+  "bundle": {
+    "s1Suffix": "\\nErr on the side of blocking. <block> immediately.",
+    "s2Suffix": "\\nReview the classification process and follow it carefully... Use <thinking> before responding with <block>.",
+    "hasCategoryTag": false,
+    "hasHardDeny": false
+  }
+}
