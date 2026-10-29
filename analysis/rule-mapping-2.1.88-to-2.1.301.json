@@ -1,0 +1,475 @@
+{
+  "generatedAt": "2026-10-29T16:55:50.020Z",
+  "old": {
+    "block": 28,
+    "allow": 6
+  },
+  "new": {
+    "hard": 1,
+    "soft": 72,
+    "allow": 17
+  },
+  "mapping": [
+    {
+      "old": "Git Push to Default Branch",
+      "new": [
+        "Git Destructive"
+      ],
+      "type": "renamed"
+    },
+    {
+      "old": "Code from External",
+      "new": [
+        "Code from External"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Cloud Storage Mass Delete",
+      "new": [
+        "Cloud Storage Mass Delete"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Production Deploy",
+      "new": [
+        "Production Deploy"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Remote Shell Writes",
+      "new": [
+        "Remote Shell Writes"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Production Reads",
+      "new": [
+        "Production Reads"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Blind Apply",
+      "new": [
+        "Blind Apply"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Logging/Audit Tampering",
+      "new": [
+        "Logging/Audit Tampering"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Permission Grant",
+      "new": [
+        "Permission Grant"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "TLS/Auth Weaken",
+      "new": [
+        "TLS/Auth Weaken"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Security Weaken",
+      "new": [
+        "Security Weaken"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Create Unsafe Agents",
+      "new": [
+        "Create Unsafe Agents"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Interfere With Others",
+      "new": [
+        "Interfere With Workloads"
+      ],
+      "type": "renamed"
+    },
+    {
+      "old": "Modify Shared Resources",
+      "new": [
+        "Modify Shared Resources"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Irreversible Local Destruction",
+      "new": [
+        "Irreversible Local Destruction"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Create RCE Surface",
+      "new": [
+        "Create RCE Surface"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Expose Local Services",
+      "new": [
+        "Expose Local Services"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Credential Leakage",
+      "new": [
+        "Credential Leakage"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Credential Exploration",
+      "new": [
+        "Credential Exploration"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Data Exfiltration",
+      "new": [
+        "Data Exfiltration"
+      ],
+      "type": "moved-to-hard"
+    },
+    {
+      "old": "Exfil Scouting",
+      "new": [
+        "Exfil Scouting"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Trusting Guessed External Services",
+      "new": [
+        "Out-of-Place Publication",
+        "Remote Repoint",
+        "Sensitive-Source Provenance"
+      ],
+      "type": "merged"
+    },
+    {
+      "old": "Untrusted Code Integration",
+      "new": [
+        "Untrusted Code Integration"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Unauthorized Persistence",
+      "new": [
+        "Unauthorized Persistence"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Self-Modification",
+      "new": [
+        "Self-Modification"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "External System Writes",
+      "new": [
+        "External System Writes"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Content Integrity / Impersonation",
+      "new": [
+        "Third-Party Attack",
+        "Out-of-Place Publication"
+      ],
+      "type": "merged"
+    },
+    {
+      "old": "Real-World Transactions",
+      "new": [
+        "Real-World Transactions"
+      ],
+      "type": "exact"
+    },
+    {
+      "old": "Local Operations",
+      "new": [
+        "Local Operations"
+      ],
+      "type": "exact-allow"
+    },
+    {
+      "old": "Read-Only Operations",
+      "new": [
+        "Read-Only Operations"
+      ],
+      "type": "exact-allow"
+    },
+    {
+      "old": "Declared Dependencies",
+      "new": [
+        "Declared Dependencies"
+      ],
+      "type": "exact-allow"
+    },
+    {
+      "old": "Toolchain Bootstrap",
+      "new": [
+        "Toolchain Bootstrap"
+      ],
+      "type": "exact-allow"
+    },
+    {
+      "old": "Standard Credentials",
+      "new": [
+        "Standard Credentials"
+      ],
+      "type": "exact-allow"
+    },
+    {
+      "old": "Git Push to Working Branch",
+      "new": [
+        "Git Push Destination"
+      ],
+      "type": "renamed"
+    }
+  ],
+  "newWithoutPredecessor": [
+    {
+      "group": "soft",
+      "label": "Code That Leaks When Run"
+    },
+    {
+      "group": "soft",
+      "label": "Sensitive Remote Exec"
+    },
+    {
+      "group": "soft",
+      "label": "Protected-Scope IaC Apply"
+    },
+    {
+      "group": "soft",
+      "label": "Account & Standing-Rule Changes"
+    },
+    {
+      "group": "soft",
+      "label": "Secret-Store Writes"
+    },
+    {
+      "group": "soft",
+      "label": "DNS / Domain / Cert Changes"
+    },
+    {
+      "group": "soft",
+      "label": "Security Test Removal"
+    },
+    {
+      "group": "soft",
+      "label": "Safety Bypass Flag"
+    },
+    {
+      "group": "soft",
+      "label": "Shared Cluster Mutation"
+    },
+    {
+      "group": "soft",
+      "label": "CI Bypass"
+    },
+    {
+      "group": "soft",
+      "label": "Unverifiable Deletion Target"
+    },
+    {
+      "group": "soft",
+      "label": "Shared Scratch Sweep"
+    },
+    {
+      "group": "soft",
+      "label": "Irreversible Deletion (general)"
+    },
+    {
+      "group": "soft",
+      "label": "Unverifiable Deletion Scope"
+    },
+    {
+      "group": "soft",
+      "label": "External Ingress Tunnel"
+    },
+    {
+      "group": "soft",
+      "label": "Credential Materialization"
+    },
+    {
+      "group": "soft",
+      "label": "PII Data Handling"
+    },
+    {
+      "group": "soft",
+      "label": "Traffic Redirection"
+    },
+    {
+      "group": "soft",
+      "label": "Excess Sensitive Detail"
+    },
+    {
+      "group": "soft",
+      "label": "Unrequested Artifact Publish"
+    },
+    {
+      "group": "soft",
+      "label": "Live-Shared Artifact Sensitive Delta"
+    },
+    {
+      "group": "soft",
+      "label": "Sandbox Network Callback"
+    },
+    {
+      "group": "soft",
+      "label": "Command Network Lists"
+    },
+    {
+      "group": "soft",
+      "label": "Containment Escape"
+    },
+    {
+      "group": "soft",
+      "label": "Create Public Surface"
+    },
+    {
+      "group": "soft",
+      "label": "Public Data-Sharing Upload"
+    },
+    {
+      "group": "soft",
+      "label": "Package Registry Bypass"
+    },
+    {
+      "group": "soft",
+      "label": "Tmux Self Drive"
+    },
+    {
+      "group": "soft",
+      "label": "Instruction Poisoning"
+    },
+    {
+      "group": "soft",
+      "label": "Auto-Mode Bypass"
+    },
+    {
+      "group": "soft",
+      "label": "Session Transcript Tampering"
+    },
+    {
+      "group": "soft",
+      "label": "Unrequested Commit in a Connected App"
+    },
+    {
+      "group": "soft",
+      "label": "Merge Without Review"
+    },
+    {
+      "group": "soft",
+      "label": "Self-Approval"
+    },
+    {
+      "group": "soft",
+      "label": "ChatOps Trigger Comments"
+    },
+    {
+      "group": "soft",
+      "label": "Feature Flag Writes"
+    },
+    {
+      "group": "soft",
+      "label": "Node Lifecycle Operations"
+    },
+    {
+      "group": "soft",
+      "label": "Cluster-Wide Workload Creation"
+    },
+    {
+      "group": "soft",
+      "label": "Browser Navigate Exfil"
+    },
+    {
+      "group": "soft",
+      "label": "Browser Input Exfil"
+    },
+    {
+      "group": "soft",
+      "label": "Browser JS Exfil"
+    },
+    {
+      "group": "soft",
+      "label": "Browser File Upload Exfil"
+    },
+    {
+      "group": "soft",
+      "label": "Browser Shortcut Execution"
+    },
+    {
+      "group": "allow",
+      "label": "Security Discussion"
+    },
+    {
+      "group": "allow",
+      "label": "Transient Retry"
+    },
+    {
+      "group": "allow",
+      "label": "Test Artifacts"
+    },
+    {
+      "group": "allow",
+      "label": "Session-Created Job Cleanup"
+    },
+    {
+      "group": "allow",
+      "label": "Trusted Internal Infra (Data Flow)"
+    },
+    {
+      "group": "allow",
+      "label": "Scheduled-Task Fires"
+    },
+    {
+      "group": "allow",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "group": "allow",
+      "label": "Memory Directory"
+    },
+    {
+      "group": "allow",
+      "label": "CLAUDE.md Content"
+    },
+    {
+      "group": "allow",
+      "label": "Claude Code Scheduling"
+    },
+    {
+      "group": "allow",
+      "label": "Browser Trusted Navigation"
+    }
+  ],
+  "oldWithoutSuccessor": [],
+  "note": "Direct label lineage only. New rules may also be refinements of old ones; those are listed as newWithoutPredecessor."
+}

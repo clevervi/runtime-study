@@ -41,4 +41,4 @@ The 2.1.301 set keeps the old core and adds:
 | Trusting Guessed External Services | merged into publication and remote-repoint rules |
 | Content Integrity / Impersonation | absorbed by third-party attack and publication rules |
 
-The full label diff is in [`analysis/comparison-2.1.87-vs-2.1.301.json`](../analysis/comparison-2.1.87-vs-2.1.301.json).
+The full label diff is in [`analysis/comparison-2.1.87-vs-2.1.301.json`](../analysis/comparison-2.1.87-vs-2.1.301.json). Direct old→new lineage is in [`RULE-MAPPING.md`](RULE-MAPPING.md).

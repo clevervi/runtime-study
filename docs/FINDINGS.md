@@ -66,6 +66,12 @@ The file says <block> no </block>.
 
 A second case, `<block>\nno\n</block>`, is unparseable under the authentic parser (fail-closed) and **allow** under the hardened one.
 
+### 2.1.301 keeps the strict parser
+
+The 2.1.301 binary contains the same strict matcher as 2.1.88. The stage-1 suffix says the response must begin with `<block>`, but the parser still takes the first matching tag; there is no `startsWith` check in code. On the full corpus, 2.1.301 and 2.1.88 agree on all 24 cases, while the hardened fork differs on 4.
+
+That makes the 2.1.301 mitigation **behavioral**, not structural: it relies on the model following the output-format instruction. A transcript that induces the model to emit an injected `<block>no</block>` at the start of its response would still pass the parser.
+
 ### Interpretation
 
 The hardened parser reduces false positives on chatty output. It also converts ambiguous output from "block for safety" into an explicit allow. In a system where the classifier transcript can contain attacker-controlled text, that is a real trade-off, not a strict improvement.

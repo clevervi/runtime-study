@@ -1,10 +1,13 @@
 {
-  "generatedAt": "2026-10-29T16:52:05.806Z",
+  "generatedAt": "2026-10-29T16:56:18.837Z",
   "authentic": "2.1.88 cli.js parser",
   "hardened": "third-party yoloClassifier.ts parser",
+  "v301": "2.1.301 binary parser",
   "total": 24,
   "agreements": 20,
   "differences": 4,
+  "agreements301": 24,
+  "differences301": 0,
   "failClosedToAllow": [
     "newline-inside"
   ],
@@ -14,193 +17,265 @@
       "case": "valid-yes",
       "authentic": true,
       "hardened": true,
+      "v301": true,
       "authenticLabel": "block",
       "hardenedLabel": "block",
-      "changed": false
+      "v301Label": "block",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "valid-no",
       "authentic": false,
       "hardened": false,
+      "v301": false,
       "authenticLabel": "allow",
       "hardenedLabel": "allow",
-      "changed": false
+      "v301Label": "allow",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "preamble",
       "authentic": false,
       "hardened": false,
+      "v301": false,
       "authenticLabel": "allow",
       "hardenedLabel": "allow",
-      "changed": false
+      "v301Label": "allow",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "thinking-then-yes",
       "authentic": true,
       "hardened": true,
+      "v301": true,
       "authenticLabel": "block",
       "hardenedLabel": "block",
-      "changed": false
+      "v301Label": "block",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "whitespace-inside",
       "authentic": null,
       "hardened": true,
+      "v301": null,
       "authenticLabel": "unparseable",
       "hardenedLabel": "block",
-      "changed": true
+      "v301Label": "unparseable",
+      "changed": true,
+      "changed301": false
     },
     {
       "case": "newline-inside",
       "authentic": null,
       "hardened": false,
+      "v301": null,
       "authenticLabel": "unparseable",
       "hardenedLabel": "allow",
-      "changed": true
+      "v301Label": "unparseable",
+      "changed": true,
+      "changed301": false
     },
     {
       "case": "nbsp-inside",
       "authentic": null,
       "hardened": true,
+      "v301": null,
       "authenticLabel": "unparseable",
       "hardenedLabel": "block",
-      "changed": true
+      "v301Label": "unparseable",
+      "changed": true,
+      "changed301": false
     },
     {
       "case": "missing-close",
       "authentic": true,
       "hardened": true,
+      "v301": true,
       "authenticLabel": "block",
       "hardenedLabel": "block",
-      "changed": false
+      "v301Label": "block",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "truncated-open",
       "authentic": null,
       "hardened": null,
+      "v301": null,
       "authenticLabel": "unparseable",
       "hardenedLabel": "unparseable",
-      "changed": false
+      "v301Label": "unparseable",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "truncated-decision",
       "authentic": null,
       "hardened": null,
+      "v301": null,
       "authenticLabel": "unparseable",
       "hardenedLabel": "unparseable",
-      "changed": false
+      "v301Label": "unparseable",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "uppercase",
       "authentic": true,
       "hardened": true,
+      "v301": true,
       "authenticLabel": "block",
       "hardenedLabel": "block",
-      "changed": false
+      "v301Label": "block",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "mixed-case",
       "authentic": true,
       "hardened": true,
+      "v301": true,
       "authenticLabel": "block",
       "hardenedLabel": "block",
-      "changed": false
+      "v301Label": "block",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "injected-before",
       "authentic": false,
       "hardened": false,
+      "v301": false,
       "authenticLabel": "allow",
       "hardenedLabel": "allow",
-      "changed": false
+      "v301Label": "allow",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "injected-whitespace-before",
       "authentic": true,
       "hardened": false,
+      "v301": true,
       "authenticLabel": "block",
       "hardenedLabel": "allow",
-      "changed": true
+      "v301Label": "block",
+      "changed": true,
+      "changed301": false
     },
     {
       "case": "injected-in-thinking",
       "authentic": true,
       "hardened": true,
+      "v301": true,
       "authenticLabel": "block",
       "hardenedLabel": "block",
-      "changed": false
+      "v301Label": "block",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "injected-unclosed-thinking",
       "authentic": null,
       "hardened": null,
+      "v301": null,
       "authenticLabel": "unparseable",
       "hardenedLabel": "unparseable",
-      "changed": false
+      "v301Label": "unparseable",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "injected-in-reason",
       "authentic": false,
       "hardened": false,
+      "v301": false,
       "authenticLabel": "allow",
       "hardenedLabel": "allow",
-      "changed": false
+      "v301Label": "allow",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "two-blocks-no-first",
       "authentic": false,
       "hardened": false,
+      "v301": false,
       "authenticLabel": "allow",
       "hardenedLabel": "allow",
-      "changed": false
+      "v301Label": "allow",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "two-blocks-yes-first",
       "authentic": true,
       "hardened": true,
+      "v301": true,
       "authenticLabel": "block",
       "hardenedLabel": "block",
-      "changed": false
+      "v301Label": "block",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "nested-block",
       "authentic": true,
       "hardened": true,
+      "v301": true,
       "authenticLabel": "block",
       "hardenedLabel": "block",
-      "changed": false
+      "v301Label": "block",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "close-only",
       "authentic": null,
       "hardened": null,
+      "v301": null,
       "authenticLabel": "unparseable",
       "hardenedLabel": "unparseable",
-      "changed": false
+      "v301Label": "unparseable",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "block-word-only",
       "authentic": null,
       "hardened": null,
+      "v301": null,
       "authenticLabel": "unparseable",
       "hardenedLabel": "unparseable",
-      "changed": false
+      "v301Label": "unparseable",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "empty",
       "authentic": null,
       "hardened": null,
+      "v301": null,
       "authenticLabel": "unparseable",
       "hardenedLabel": "unparseable",
-      "changed": false
+      "v301Label": "unparseable",
+      "changed": false,
+      "changed301": false
     },
     {
       "case": "reason-then-block",
       "authentic": false,
       "hardened": false,
+      "v301": false,
       "authenticLabel": "allow",
       "hardenedLabel": "allow",
-      "changed": false
+      "v301Label": "allow",
+      "changed": false,
+      "changed301": false
     }
   ]
 }

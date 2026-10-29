@@ -22,6 +22,16 @@ export function parseHardened(text) {
   return matches[0][1].toLowerCase() === 'yes'
 }
 
+// 2.1.301 keeps the strict matcher. The "response must begin with <block>"
+// requirement is prompt text, not parser enforcement.
+export function parse301(text) {
+  const matches = [
+    ...stripThinking(text).matchAll(/<block>(yes|no)\b(<\/block>)?/gi),
+  ]
+  if (matches.length === 0) return null
+  return matches[0][1].toLowerCase() === 'yes'
+}
+
 export function label(value) {
   if (value === null) return 'unparseable'
   return value ? 'block' : 'allow'
