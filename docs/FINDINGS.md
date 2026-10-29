@@ -37,7 +37,7 @@ The third-party repository claims to be a deobfuscated 2.1.88 tree with "hardeni
 
 The fork changed three things:
 
-1. S1 suffix: `Err on the side of blocking. <block> immediately.` became a longer instruction requiring `<block>yes</block>` or `<block>no</block>` with no preamble.
+1. S1 suffix: a short blocking instruction became a longer one requiring an explicit `<block>yes</block>` or `<block>no</block>` with no preamble.
 2. S2 suffix: now asks for `<thinking>` reasoning plus a `<reason>` tag.
 3. Parser: the strict matcher, which requires the decision immediately after the tag, became a tolerant matcher that accepts whitespace, newlines, and an unterminated tag.
 

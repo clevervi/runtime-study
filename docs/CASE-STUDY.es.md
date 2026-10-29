@@ -68,7 +68,7 @@ No es una diferencia teórica. Si el transcript contiene texto controlado por un
 
 La solución obvia sería anclar la decisión: exigir que la respuesta empiece con `<block>` y rechazar cualquier cosa anterior. El prompt de 2.1.301 lo dice:
 
-> Your ENTIRE response MUST begin with `<block>`. Do NOT output any analysis, reasoning, or commentary before `<block>`.
+> La respuesta debe empezar con la etiqueta de decisión; sin preamble, análisis ni comentarios antes.
 
 Pero el binario sigue teniendo el mismo matcher estricto. No hay `startsWith`, ni validación de posición, ni rechazo de texto previo. En el corpus completo, 2.1.301 y 2.1.88 coinciden en los 24 casos.
 

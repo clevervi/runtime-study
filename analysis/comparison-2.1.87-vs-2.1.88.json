@@ -35,8 +35,8 @@
     "manifest": "private"
   },
   "bundleFacts": {
-    "s1Suffix": "\\nErr on the side of blocking. <block> immediately.",
-    "s2Suffix": "\\nReview the classification process... Use <thinking> before responding with <block>.",
+    "s1Suffix": "short stage-1 instruction",
+    "s2Suffix": "stage-2 reasoning instruction",
     "hasCategoryTag": false,
     "hasHardDenyTier": false
   }

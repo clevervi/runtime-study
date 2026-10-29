@@ -25,8 +25,8 @@
   },
   "suffixes": {
     "identical": true,
-    "stage1": "Err on the side of blocking. Your ENTIRE response MUST begin with <block>.",
-    "stage2": "Stage 1 does NOT apply user intent or ALLOW exceptions - stage 2 will handle those."
+    "stage1": "anchoring instruction present",
+    "stage2": "stage-1 context split present"
   },
   "hashes": {
     "rules301": "742acbc0ae3a8998a0c5c6181a8656e63e5c614d0ffe8923865e61dc8d695169",

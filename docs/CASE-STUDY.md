@@ -68,7 +68,7 @@ This is not a theoretical parser difference. If the transcript contains attacker
 
 The obvious fix would be to anchor the decision: require the response to start with `<block>`, and reject anything that appears before it. The 2.1.301 prompt does say exactly that:
 
-> Your ENTIRE response MUST begin with `<block>`. Do NOT output any analysis, reasoning, or commentary before `<block>`.
+> The response must begin with the decision tag; no preamble, analysis, or commentary before it.
 
 But the binary still contains the same strict matcher. There is no `startsWith` check, no position validation, no rejection of leading text. On the full corpus, 2.1.301 and 2.1.88 agree on all 24 cases.
 

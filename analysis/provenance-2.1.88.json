@@ -44,8 +44,8 @@
     "note": "Recovered from cli.js.map sourcesContent. The snapshot is kept private. Only two .ts files differ from the third-party fork; both were modified by its author."
   },
   "bundle": {
-    "s1Suffix": "\\nErr on the side of blocking. <block> immediately.",
-    "s2Suffix": "\\nReview the classification process and follow it carefully... Use <thinking> before responding with <block>.",
+    "s1": "short blocking instruction",
+    "s2": "stage-2 reasoning instruction",
     "hasCategoryTag": false,
     "hasHardDeny": false
   }

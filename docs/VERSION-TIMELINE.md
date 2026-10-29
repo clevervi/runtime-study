@@ -17,7 +17,7 @@ The classifier did not change once; it changed in steps. These are the first pub
 
 ## What the milestones mean
 
-1. **2.1.110** adds the explicit stage-1 instruction (“Stage 1 does NOT apply user intent or ALLOW exceptions”) and expands the prose rules from 28+6 to 31+7.
+1. **2.1.110** adds an explicit stage-1 instruction that excludes user intent and ALLOW exceptions, and expands the prose rules from 28+6 to 31+7.
 2. **2.1.136** is the first version with a HARD tier. It starts with two rules: `Data Exfiltration` and `Safety-Check Bypass`. The rules move from prose to structured defaults.
 3. **2.1.195–198** is the largest single-step growth: 55 → 58 soft rules, 9 → 21 environment fields, and the `<category>` output requirement. The environment expansion alone changes how much context the classifier gets.
 4. **2.1.301** reaches 72 soft rules and 17 allow rules. The parser remains strict; the anchoring requirement is prompt-only.
