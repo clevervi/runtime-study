@@ -3,6 +3,7 @@
 **A source-level study of an agentic CLI runtime.**  
 Permission gating, context compaction, and release drift, reconstructed from shipped artifacts.
 
+[![ci](https://github.com/clevervi/runtime-study/actions/workflows/ci.yml/badge.svg)](https://github.com/clevervi/runtime-study/actions/workflows/ci.yml)
 ![node](https://img.shields.io/badge/node-%3E%3D22-3c873a?style=flat-square)
 ![study](https://img.shields.io/badge/snapshot-2.1.88-555555?style=flat-square)
 ![status](https://img.shields.io/badge/status-research-6b7280?style=flat-square)
