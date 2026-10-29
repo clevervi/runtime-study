@@ -16,7 +16,7 @@ No proprietary source snapshot is published here. The `src/` tree reconstructed 
 
 ## License
 
-The original code in this repository (`tools/`, `tests/`, analysis prose) is available for research and educational use. The underlying product and its prompts remain the property of their owners.
+The original code and documentation in this repository (`tools/`, `tests/`, analysis prose) are MIT-licensed; see [LICENSE](LICENSE). That license does not cover any third-party product, prompt, source snapshot, or trademark referenced by the research. The underlying product and its prompts remain the property of their owners.
 
 ## No warranty
 

@@ -7,8 +7,15 @@ Permission gating, context compaction, and release drift, reconstructed from shi
 ![node](https://img.shields.io/badge/node-%3E%3D22-3c873a?style=flat-square)
 ![study](https://img.shields.io/badge/snapshot-2.1.88-555555?style=flat-square)
 ![status](https://img.shields.io/badge/status-research-6b7280?style=flat-square)
+![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
 > Independent research. Not affiliated with Anthropic. This repository contains the study, tools, and aggregate findings. It does **not** contain the proprietary source snapshot. See [NOTICE.md](NOTICE.md).
+
+## Start here
+
+- **[Case study: when hardening weakens the gate](docs/CASE-STUDY.md)** — [versión en español](docs/CASE-STUDY.es.md)
+- **[Design spec: permission gate for an agentic runtime](docs/AGENT-SPEC.md)**
+- [Findings](docs/FINDINGS.md) · [Rule mapping](docs/RULE-MAPPING.md) · [Reproduce](docs/REPRODUCE.md)
 
 ---
 
@@ -64,7 +71,7 @@ Full corpus and results: [`analysis/parser-eval.json`](analysis/parser-eval.json
 tools/parser-eval/       differential harness: authentic vs hardened parser
 tools/fetch-version.mjs  fetch a release, extract prompts/rules, diff
 analysis/                comparison JSON, parser evaluation, provenance
-docs/                    findings, rule taxonomy and mapping, method, reproduction
+docs/                    case study, findings, agent spec, rule mapping, method, reproduction
 tests/                   parser and compaction regression tests
 ```
 
