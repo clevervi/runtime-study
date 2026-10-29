@@ -65,13 +65,15 @@ Full corpus and results: [`analysis/parser-eval.json`](analysis/parser-eval.json
 | 2.1.301 | XML, two-stage, strict stage 1 | 1 hard + 72 soft + 17 allow | 126,793 chars reconstructed |
 | 2.1.312 | identical to 2.1.301 | identical | identical |
 
+Intermediate milestones (2.1.110, 2.1.136, 2.1.198) are tracked in [`docs/VERSION-TIMELINE.md`](docs/VERSION-TIMELINE.md).
+
 ## Repository layout
 
 ```
 tools/parser-eval/       differential harness: authentic vs hardened parser
 tools/fetch-version.mjs  fetch a release, extract prompts/rules, diff
 analysis/                comparison JSON, parser evaluation, provenance
-docs/                    case study, findings, agent spec, rule mapping, method, reproduction
+docs/                    case study, findings, agent spec, rule mapping, version timeline, method, reproduction
 tests/                   parser and compaction regression tests
 ```
 

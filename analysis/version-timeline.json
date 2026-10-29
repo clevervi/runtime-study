@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-10-29T18:45:00.000Z",
+  "note": "Milestones observed in published versions. Counts for 2.1.87/2.1.88/2.1.110 come from the prose template; 2.1.136 and later come from `auto-mode defaults` structured rules. Unpublished intermediate builds may exist.",
+  "milestones": [
+    {
+      "version": "2.1.87",
+      "baseChars": 12511,
+      "externalChars": 13218,
+      "resolvedChars": 25532,
+      "block": 28,
+      "allow": 6,
+      "environment": 4,
+      "hard": 0,
+      "category": false,
+      "stage1Split": false,
+      "ruleSource": "prose template"
+    },
+    {
+      "version": "2.1.88",
+      "baseChars": 12511,
+      "externalChars": 13218,
+      "resolvedChars": 25532,
+      "block": 28,
+      "allow": 6,
+      "environment": 4,
+      "hard": 0,
+      "category": false,
+      "stage1Split": false,
+      "ruleSource": "prose template",
+      "note": "identical to 2.1.87"
+    },
+    {
+      "version": "2.1.110",
+      "baseChars": 14246,
+      "externalChars": 15314,
+      "block": 31,
+      "allow": 7,
+      "hard": 0,
+      "category": false,
+      "stage1Split": true,
+      "ruleSource": "prose template"
+    },
+    {
+      "version": "2.1.136",
+      "allow": 9,
+      "soft": 30,
+      "hard": 2,
+      "environment": 5,
+      "category": false,
+      "stage1Split": true,
+      "hardRules": ["Data Exfiltration", "Safety-Check Bypass"],
+      "ruleSource": "structured defaults"
+    },
+    {
+      "version": "2.1.195",
+      "allow": 16,
+      "soft": 55,
+      "hard": 1,
+      "environment": 9,
+      "category": false,
+      "stage1Split": true,
+      "ruleSource": "structured defaults"
+    },
+    {
+      "version": "2.1.197",
+      "allow": 16,
+      "soft": 55,
+      "hard": 1,
+      "environment": 9,
+      "category": false,
+      "stage1Split": true,
+      "ruleSource": "structured defaults"
+    },
+    {
+      "version": "2.1.198",
+      "allow": 16,
+      "soft": 58,
+      "hard": 1,
+      "environment": 21,
+      "category": true,
+      "stage1Split": true,
+      "ruleSource": "structured defaults",
+      "note": "first published version with <category>"
+    },
+    {
+      "version": "2.1.200",
+      "allow": 16,
+      "soft": 62,
+      "hard": 1,
+      "environment": 21,
+      "category": true,
+      "stage1Split": true,
+      "ruleSource": "structured defaults"
+    },
+    {
+      "version": "2.1.301",
+      "allow": 17,
+      "soft": 72,
+      "hard": 1,
+      "environment": 21,
+      "category": true,
+      "stage1Split": true,
+      "ruleSource": "structured defaults"
+    },
+    {
+      "version": "2.1.312",
+      "allow": 17,
+      "soft": 72,
+      "hard": 1,
+      "environment": 21,
+      "category": true,
+      "stage1Split": true,
+      "ruleSource": "structured defaults",
+      "note": "identical to 2.1.301"
+    }
+  ]
+}

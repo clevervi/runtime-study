@@ -13,6 +13,8 @@ The classifier surface is stable across 2.1.87 and 2.1.88, then changes substant
 | 2.1.301 | 126,793 (reconstructed) | 1 hard + 72 soft + 17 allow + 21 environment | `<block>` + `<category>` + `<reason>` |
 | 2.1.312 | 126,793 (identical) | identical to 2.1.301 | identical |
 
+Intermediate milestones: 2.1.110 adds the explicit stage-1 split (31+7 rules), 2.1.136 introduces the structured rule layer and the first HARD tier (`Data Exfiltration` + `Safety-Check Bypass`), and 2.1.198 introduces `<category>` and expands the environment to 21 fields. Full table: [`VERSION-TIMELINE.md`](VERSION-TIMELINE.md).
+
 The 2.1.301 changes:
 
 - a **HARD DENY** tier that user intent cannot clear (`Data Exfiltration`);
