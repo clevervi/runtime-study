@@ -1,0 +1,389 @@
+{
+  "generatedAt": "2026-10-29T17:08:13.886Z",
+  "note": "Inferred lineage for rules without a direct predecessor. Confidence is analytical, not from the artifacts.",
+  "counts": {
+    "high": 33,
+    "medium": 21,
+    "low": 0
+  },
+  "rows": [
+    {
+      "group": "soft",
+      "label": "Code That Leaks When Run",
+      "predecessor": "Data Exfiltration",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Sensitive Remote Exec",
+      "predecessor": "Remote Shell Writes",
+      "relation": "refinement",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Protected-Scope IaC Apply",
+      "predecessor": "Blind Apply",
+      "relation": "refinement",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Account & Standing-Rule Changes",
+      "predecessor": "Permission Grant",
+      "relation": "refinement",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Secret-Store Writes",
+      "predecessor": "Credential Leakage",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "DNS / Domain / Cert Changes",
+      "predecessor": "TLS/Auth Weaken",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Security Test Removal",
+      "predecessor": "Security Weaken",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Safety Bypass Flag",
+      "predecessor": "Security Weaken",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Shared Cluster Mutation",
+      "predecessor": "Modify Shared Resources",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "CI Bypass",
+      "predecessor": "Security Weaken",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Unverifiable Deletion Target",
+      "predecessor": "Irreversible Local Destruction",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Shared Scratch Sweep",
+      "predecessor": "Irreversible Local Destruction",
+      "relation": "split",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Irreversible Deletion (general)",
+      "predecessor": "Irreversible Local Destruction",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Unverifiable Deletion Scope",
+      "predecessor": "Irreversible Local Destruction",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "External Ingress Tunnel",
+      "predecessor": "Expose Local Services",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Credential Materialization",
+      "predecessor": "Credential Exploration",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "PII Data Handling",
+      "predecessor": "Data Exfiltration",
+      "relation": "refinement",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Traffic Redirection",
+      "predecessor": "Exfil Scouting",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Excess Sensitive Detail",
+      "predecessor": "Data Exfiltration",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Unrequested Artifact Publish",
+      "predecessor": "External System Writes",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Live-Shared Artifact Sensitive Delta",
+      "predecessor": "Data Exfiltration",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Sandbox Network Callback",
+      "predecessor": "Exfil Scouting",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Command Network Lists",
+      "predecessor": "Exfil Scouting",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Containment Escape",
+      "predecessor": "Create RCE Surface",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Create Public Surface",
+      "predecessor": "Expose Local Services",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Public Data-Sharing Upload",
+      "predecessor": "Data Exfiltration",
+      "relation": "refinement",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Package Registry Bypass",
+      "predecessor": "Untrusted Code Integration",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Tmux Self Drive",
+      "predecessor": "Create Unsafe Agents",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Instruction Poisoning",
+      "predecessor": "Create Unsafe Agents",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Auto-Mode Bypass",
+      "predecessor": "Self-Modification",
+      "relation": "refinement",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Session Transcript Tampering",
+      "predecessor": "Self-Modification",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Unrequested Commit in a Connected App",
+      "predecessor": "External System Writes",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Merge Without Review",
+      "predecessor": "Permission Grant",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Self-Approval",
+      "predecessor": "Security Weaken",
+      "relation": "refinement",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "ChatOps Trigger Comments",
+      "predecessor": "External System Writes",
+      "relation": "refinement",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Feature Flag Writes",
+      "predecessor": "Modify Shared Resources",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Node Lifecycle Operations",
+      "predecessor": "Modify Shared Resources",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Cluster-Wide Workload Creation",
+      "predecessor": "Modify Shared Resources",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "soft",
+      "label": "Browser Navigate Exfil",
+      "predecessor": "Data Exfiltration",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Browser Input Exfil",
+      "predecessor": "Data Exfiltration",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Browser JS Exfil",
+      "predecessor": "Data Exfiltration",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Browser File Upload Exfil",
+      "predecessor": "Data Exfiltration",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "soft",
+      "label": "Browser Shortcut Execution",
+      "predecessor": "Data Exfiltration",
+      "relation": "split",
+      "confidence": "high"
+    },
+    {
+      "group": "allow",
+      "label": "Security Discussion",
+      "predecessor": null,
+      "relation": "new",
+      "confidence": "high"
+    },
+    {
+      "group": "allow",
+      "label": "Transient Retry",
+      "predecessor": null,
+      "relation": "new",
+      "confidence": "high"
+    },
+    {
+      "group": "allow",
+      "label": "Test Artifacts",
+      "predecessor": null,
+      "relation": "new",
+      "confidence": "high"
+    },
+    {
+      "group": "allow",
+      "label": "Session-Created Job Cleanup",
+      "predecessor": null,
+      "relation": "new",
+      "confidence": "high"
+    },
+    {
+      "group": "allow",
+      "label": "Trusted Internal Infra (Data Flow)",
+      "predecessor": "Standard Credentials",
+      "relation": "refinement",
+      "confidence": "medium"
+    },
+    {
+      "group": "allow",
+      "label": "Scheduled-Task Fires",
+      "predecessor": null,
+      "relation": "new",
+      "confidence": "high"
+    },
+    {
+      "group": "allow",
+      "label": "Multi-Agent Coordination",
+      "predecessor": null,
+      "relation": "new",
+      "confidence": "high"
+    },
+    {
+      "group": "allow",
+      "label": "Memory Directory",
+      "predecessor": null,
+      "relation": "new",
+      "confidence": "high"
+    },
+    {
+      "group": "allow",
+      "label": "CLAUDE.md Content",
+      "predecessor": null,
+      "relation": "new",
+      "confidence": "high"
+    },
+    {
+      "group": "allow",
+      "label": "Claude Code Scheduling",
+      "predecessor": null,
+      "relation": "new",
+      "confidence": "high"
+    },
+    {
+      "group": "allow",
+      "label": "Browser Trusted Navigation",
+      "predecessor": "Read-Only Operations",
+      "relation": "refinement",
+      "confidence": "medium"
+    }
+  ]
+}
