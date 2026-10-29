@@ -44,7 +44,6 @@ for (const row of rows) {
 }
 
 const report = {
-  generatedAt: new Date().toISOString(),
   authentic: '2.1.88 cli.js parser',
   hardened: 'third-party yoloClassifier.ts parser',
   v301: '2.1.301 binary parser',
