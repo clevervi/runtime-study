@@ -10,7 +10,9 @@
   "scripts": {
     "test": "node tests/yolo_parser.test.js && node tests/compact_parser.test.js && node --test tests/parser_eval.test.js",
     "eval:parser": "node tools/parser-eval/run.mjs",
+    "verify": "npm test && npm run eval:parser",
+    "hooks:install": "git config core.hooksPath .githooks",
     "fetch:version": "node tools/fetch-version.mjs"
   },
-  "license": "UNLICENSED"
+  "license": "MIT"
 }

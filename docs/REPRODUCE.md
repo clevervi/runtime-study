@@ -47,6 +47,12 @@ npm run eval:parser
 
 Both exit 0. The source snapshot is not part of this repository, so there is no snapshot tag to check out here.
 
-## CI
+## Verification
 
-`.github/workflows/ci.yml` runs the same commands on push. If the account's Actions billing is inactive, GitHub rejects the job before the first step; run the commands locally instead.
+`npm run verify` runs the tests and the parser evaluation. Install the pre-push hook with:
+
+```bash
+npm run hooks:install
+```
+
+The GitHub Actions workflow is kept for forks; it is disabled on this repository.

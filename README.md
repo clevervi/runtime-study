@@ -3,7 +3,7 @@
 **A source-level study of an agentic CLI runtime.**  
 Permission gating, context compaction, and release drift, reconstructed from shipped artifacts.
 
-[![ci](https://github.com/clevervi/runtime-study/actions/workflows/ci.yml/badge.svg)](https://github.com/clevervi/runtime-study/actions/workflows/ci.yml)
+![tests](https://img.shields.io/badge/tests-local-3c873a?style=flat-square)
 ![node](https://img.shields.io/badge/node-%3E%3D22-3c873a?style=flat-square)
 ![study](https://img.shields.io/badge/snapshot-2.1.88-555555?style=flat-square)
 ![status](https://img.shields.io/badge/status-research-6b7280?style=flat-square)
@@ -80,10 +80,11 @@ tests/                   parser and compaction regression tests
 ## Quick start
 
 ```bash
-npm run eval:parser     # run the differential parser evaluation
-npm test                # parser + compaction tests
+npm run verify          # tests + parser evaluation
 node tools/fetch-version.mjs 2.1.88
 ```
+
+Install the pre-push hook with `npm run hooks:install` if you want the same checks before every push.
 
 `fetch:version` tries npm first, then the Wayback Machine, then the platform-native package. Extracted material goes to `research/` (gitignored).
 
